@@ -9,6 +9,7 @@ It makes use of BeautifulSoup 4 for HTML parsing.  This code was tested on Windo
 1. Install the requirements with `pip install -r requirements.txt`. It is recommended to use a virtual environment.
 2. Run `python crawler.py` - on some systems, `python3` may be the correct command.
 3. This code creates an `output/` directory, containing `data_mart.csv` and folders with the downloaded files - one folder per case.  `data_mart.csv` contains one row per downloaded file, with metadata on the case it is for, the document in question, and the downloaded file path.  Cases with no files will not be included.
+4. In case of any issues, logs are saved to `md_case_scrape.log` in the project's root directory.
 
 Note that rerunning the script will overwrite `data_mart.csv` but will not delete previously-downloaded files.
 
